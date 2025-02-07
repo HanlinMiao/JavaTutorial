@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
 
-    public static final double PI = 3.14159;
+    public static final double PI = 3.14159; // property
     private int x = 10; // We can use getter and setter
 
     public static void main(String[] args) {
@@ -40,8 +40,17 @@ public class Main {
         final int X = 5; // Initializing a constant
         double t = Main.PI;
 
+        int a = 434343; // int has a size of 32 bits
+        long l = 213123121232132L; // long has a size of 64 bits
+        boolean isPizza = true;
+        byte b = 'C'; // 8 bits -> ASCII table allows number and letters to be store in a byte object
+        char c = 'Z'; // allows us to store Unicode characters 16 bits
+        short s = -32768; // short is a small number 16 bits
+
+        float f = 20.5f; // float is 32 bit use float when you are super restricted in memory
+        double d = 20.5; // double is 64 bit
+
     }
-    String x = new String("hello"); // property
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
 // objects - instances of a class (given the data type)
