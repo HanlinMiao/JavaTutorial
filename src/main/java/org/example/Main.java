@@ -7,6 +7,10 @@ import java.util.Scanner;
 // i.e. methods, variables
 public class Main {
     // Class has methods with identifiers
+
+    public static final double PI = 3.14159;
+    private int x = 10; // We can use getter and setter
+
     public static void main(String[] args) {
         System.out.println("What is your name?");
 
@@ -23,6 +27,18 @@ public class Main {
         int y = 5; // primitive value
         // object similar to the primitive type
         Integer z = 5; // object (5 is autoboxed)
+
+        int i = 5; // 2-step process
+        // variable creation
+        // 1. declare
+        // 2. Initialize
+
+        int j;
+        j = 5; // initialization
+        j = 10; // J can be changed
+
+        final int X = 5; // Initializing a constant
+        double t = Main.PI;
 
     }
     String x = new String("hello"); // property
