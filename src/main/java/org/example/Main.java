@@ -19,9 +19,20 @@ public class Main {
         String x = new String("hello");
         System.out.println("Hello " + name + " " + x);
 
+        // primitive type
+        int y = 5; // primitive value
+        // object similar to the primitive type
+        Integer z = 5; // object (5 is autoboxed)
+
     }
     String x = new String("hello"); // property
 }
+// primitive types - boolean, byte, char, short, int, long, float, double
+// objects - instances of a class (given the data type)
+
+// data type: How the computer interprets the data.
+// Java is statically type language: we need to specify the type of the variables upfront
+// dynamically typed = variables do not have types
 
 // class - contains everything has members
 // methods - do something
