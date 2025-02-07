@@ -1,13 +1,23 @@
 package org.example;
 
+import java.util.Scanner;
+
 // everything is inside a class
 // everything is a member of this class
 // i.e. methods, variables
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        System.out.println("Hello");
-        System.out.println(true);
+        System.out.println("What is your name?");
+
+        // = is an assignment operator
+        // type identifier = new type()
+        // System.in is the source of the scanner
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+
+        System.out.println("Hello " + name);
+
     }
 
     String x = new String("hello"); // property
