@@ -16,10 +16,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
 
-        System.out.println("Hello " + name);
+        String x = new String("hello");
+        System.out.println("Hello " + name + " " + x);
 
     }
-
     String x = new String("hello"); // property
 }
 
@@ -33,3 +33,9 @@ public class Main {
 // object - instance of a class
 
 // String[] args is an argument, "Hello world" is an argument
+
+// literals - the value of the string
+// variable - the container that stores some value
+// expression - evaluates to a value
+// operators - work on operands to produce a value
+// operands - the thing(s) the operator works on
