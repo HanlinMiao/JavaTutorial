@@ -9,12 +9,26 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        int x = 5;
-        System.out.println(Double.NaN); // NaN
-        System.out.println(Math.sqrt(-1)); // NaN
-        System.out.println(Double.isNaN(Math.sqrt(-1))); // NaN
-        System.out.println(Math.pow(99999, 999999999)); // infinity
-        System.out.println(Math.pow(-99999, 999999999)); // - infinity
+        double x = 5.0 / 2;
+        int a = 5;
+        double y = (double) a / 2;
+        System.out.println(x);
+        System.out.println(y);
+
+        int remainder = a % 2;
+        System.out.println(remainder);
+
+        // Precedence; math order evaluated, and it is left to right
+
+        int i = 5;
+        int j = i++; // i is assigned to j and i gets incremented
+        System.out.println(i); // 6
+        System.out.println(j); // 5
+
+        int k = 5;
+        int l = ++k; // k gets incremented first and then k is assigned to l
+        System.out.println(k); // 6
+        System.out.println(l); // 6
 
     }
 }
@@ -50,8 +64,8 @@ public class Main {
 //        // type identifier = new type()
 //        // System.in is the source of the scanner
 //        Scanner scanner = new Scanner(System.in);
-////        String input = scanner.nextLine();
-////        System.out.println(input);
+//        String input = scanner.nextLine();
+//        System.out.println(input);
 //
 //        int input = scanner.nextInt();
 //        System.out.println(input);
@@ -91,3 +105,9 @@ public class Main {
 //
 //        float f = 20.5f; // float is 32 bit use float when you are super restricted in memory
 //        double d = 20.5; // double is 64 bit
+
+//        System.out.println(Double.NaN); // NaN
+//        System.out.println(Math.sqrt(-1)); // NaN
+//        System.out.println(Double.isNaN(Math.sqrt(-1))); // NaN
+//        System.out.println(Math.pow(99999, 999999999)); // infinity
+//        System.out.println(Math.pow(-99999, 999999999)); // - infinity
