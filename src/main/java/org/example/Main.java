@@ -1,5 +1,6 @@
 package org.example;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 // everything is inside a class
@@ -18,10 +19,20 @@ public class Main {
         // type identifier = new type()
         // System.in is the source of the scanner
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+//        String input = scanner.nextLine();
+//        System.out.println(input);
+
+        int input = scanner.nextInt();
+        System.out.println(input);
+
+        int result = input + 10;
+        System.out.println(result);
 
         String x = new String("hello");
-        System.out.println("Hello " + name + " " + x);
+
+        // BigDecimal is more precise than regular double or floating point numbers
+        BigDecimal money = scanner.nextBigDecimal();
+        System.out.println(money);
 
         // primitive type
         int y = 5; // primitive value
