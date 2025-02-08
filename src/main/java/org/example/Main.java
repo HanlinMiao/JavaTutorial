@@ -9,27 +9,16 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        double x = 5.0 / 2;
-        int a = 5;
-        double y = (double) a / 2;
-        System.out.println(x);
-        System.out.println(y);
+        int x = 10;
+        int y = 20;
+        System.out.println(Integer.max(x, y));
+        System.out.println(Integer.compare(x, y));
 
-        int remainder = a % 2;
-        System.out.println(remainder);
-
-        // Precedence; math order evaluated, and it is left to right
-
-        int i = 5;
-        int j = i++; // i is assigned to j and i gets incremented
-        System.out.println(i); // 6
-        System.out.println(j); // 5
-
-        int k = 5;
-        int l = ++k; // k gets incremented first and then k is assigned to l
-        System.out.println(k); // 6
-        System.out.println(l); // 6
-
+        String money = "300";
+        System.out.println(Integer.valueOf(money));
+        System.out.println(Integer.parseInt(money));
+        Integer a = Integer.valueOf(money);
+        int b = Integer.parseInt(money);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -56,9 +45,30 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        double x = 5.0 / 2;
+//        int a = 5;
+//        double y = (double) a / 2;
+//        System.out.println(x);
+//        System.out.println(y);
+//
+//        int remainder = a % 2;
+//        System.out.println(remainder);
+//
+//        // Precedence; math order evaluated, and it is left to right
+//
+//        int i = 5;
+//        int j = i++; // i is assigned to j and i gets incremented
+//        System.out.println(i); // 6
+//        System.out.println(j); // 5
+//
+//        int k = 5;
+//        int l = ++k; // k gets incremented first and then k is assigned to l
+//        System.out.println(k); // 6
+//        System.out.println(l); // 6
 //        public static final double PI = 3.14159; // property
 //        private int x = 10; // We can use getter and setter
-//    System.out.println("What is your name?");
+//        System.out.println("What is your name?");
 //
 //        // = is an assignment operator
 //        // type identifier = new type()
