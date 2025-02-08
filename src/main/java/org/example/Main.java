@@ -8,58 +8,13 @@ import java.util.Scanner;
 // i.e. methods, variables
 public class Main {
     // Class has methods with identifiers
-
-    public static final double PI = 3.14159; // property
-    private int x = 10; // We can use getter and setter
-
     public static void main(String[] args) {
-        System.out.println("What is your name?");
-
-        // = is an assignment operator
-        // type identifier = new type()
-        // System.in is the source of the scanner
-        Scanner scanner = new Scanner(System.in);
-//        String input = scanner.nextLine();
-//        System.out.println(input);
-
-        int input = scanner.nextInt();
-        System.out.println(input);
-
-        int result = input + 10;
-        System.out.println(result);
-
-        String x = new String("hello");
-
-        // BigDecimal is more precise than regular double or floating point numbers
-        BigDecimal money = scanner.nextBigDecimal();
-        System.out.println(money);
-
-        // primitive type
-        int y = 5; // primitive value
-        // object similar to the primitive type
-        Integer z = 5; // object (5 is autoboxed)
-
-        int i = 5; // 2-step process
-        // variable creation
-        // 1. declare
-        // 2. Initialize
-
-        int j;
-        j = 5; // initialization
-        j = 10; // J can be changed
-
-        final int X = 5; // Initializing a constant
-        double t = Main.PI;
-
-        int a = 434343; // int has a size of 32 bits
-        long l = 213123121232132L; // long has a size of 64 bits
-        boolean isPizza = true;
-        byte b = 'C'; // 8 bits -> ASCII table allows number and letters to be store in a byte object
-        char c = 'Z'; // allows us to store Unicode characters 16 bits
-        short s = -32768; // short is a small number 16 bits
-
-        float f = 20.5f; // float is 32 bit use float when you are super restricted in memory
-        double d = 20.5; // double is 64 bit
+        int x = 5;
+        System.out.println(Double.NaN); // NaN
+        System.out.println(Math.sqrt(-1)); // NaN
+        System.out.println(Double.isNaN(Math.sqrt(-1))); // NaN
+        System.out.println(Math.pow(99999, 999999999)); // infinity
+        System.out.println(Math.pow(-99999, 999999999)); // - infinity
 
     }
 }
@@ -86,3 +41,53 @@ public class Main {
 // expression - evaluates to a value
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
+
+//        public static final double PI = 3.14159; // property
+//        private int x = 10; // We can use getter and setter
+//    System.out.println("What is your name?");
+//
+//        // = is an assignment operator
+//        // type identifier = new type()
+//        // System.in is the source of the scanner
+//        Scanner scanner = new Scanner(System.in);
+////        String input = scanner.nextLine();
+////        System.out.println(input);
+//
+//        int input = scanner.nextInt();
+//        System.out.println(input);
+//
+//        int result = input + 10;
+//        System.out.println(result);
+//
+//        String x = new String("hello");
+//
+//        // BigDecimal is more precise than regular double or floating point numbers
+//        BigDecimal money = scanner.nextBigDecimal();
+//        System.out.println(money);
+//
+//        // primitive type
+//        int y = 5; // primitive value
+//        // object similar to the primitive type
+//        Integer z = 5; // object (5 is autoboxed)
+//
+//        int i = 5; // 2-step process
+//        // variable creation
+//        // 1. declare
+//        // 2. Initialize
+//
+//        int j;
+//        j = 5; // initialization
+//        j = 10; // J can be changed
+//
+//        final int X = 5; // Initializing a constant
+//        double t = Main.PI;
+//
+//        int a = 434343; // int has a size of 32 bits
+//        long l = 213123121232132L; // long has a size of 64 bits
+//        boolean isPizza = true;
+//        byte b = 'C'; // 8 bits -> ASCII table allows number and letters to be store in a byte object
+//        char c = 'Z'; // allows us to store Unicode characters 16 bits
+//        short s = -32768; // short is a small number 16 bits
+//
+//        float f = 20.5f; // float is 32 bit use float when you are super restricted in memory
+//        double d = 20.5; // double is 64 bit
