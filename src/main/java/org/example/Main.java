@@ -9,13 +9,24 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
+        // icu
+        // Initialization
+        // Comparison/Condition
+        // Update
 
-        String name = "CLare";
-        boolean welcome = false;
+        System.out.println("Guess the password: ");
+        String password = "let me in";
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
 
-        if (name.toLowerCase().equals("clare")) welcome = true;
+        while(!input.equals(password)) {
+            // code
+            System.out.println("Guess the password: ");
+            input = scanner.nextLine();
+        }
 
-        System.out.println(welcome);
+        System.out.println("Congrats you are in.");
+        scanner.close(); // free the memory of the scanner
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
