@@ -9,14 +9,16 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        String x = "hello cats"; // Object (instance of a class)
-        System.out.println(x.charAt(0));
-        System.out.println(x + " and dogs");
-        x += " and puppies";
-        System.out.println(x);
-        String name = "Caleb";
-        System.out.printf("hello %s%n", name);
-        System.out.println(name.length());
+        String x = "yummmm...my oh my chicken pot pie";
+        int index = x.length() - 1;
+        System.out.println(x.charAt(index));
+
+        String fullAd = x + " Now with 20% more chicken";
+        System.out.println(fullAd);
+        System.out.println(fullAd.contains("chicken"));
+        System.out.println(fullAd.indexOf("my"));
+        System.out.println(fullAd.indexOf("my", fullAd.indexOf("my")+1));
+        System.out.println(fullAd.lastIndexOf("my"));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -44,6 +46,14 @@ public class Main {
 // operands - the thing(s) the operator works on
 
 
+//        String x = "hello cats"; // Object (instance of a class)
+//        System.out.println(x.charAt(0));
+//        System.out.println(x + " and dogs");
+//        x += " and puppies";
+//        System.out.println(x);
+//        String name = "Caleb";
+//        System.out.printf("hello %s%n", name);
+//        System.out.println(name.length());
 //        int x = 10;
 //        int y = 20;
 //        System.out.println(Integer.max(x, y));
