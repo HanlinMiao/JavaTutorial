@@ -9,24 +9,11 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        System.out.println("What's your name?");
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+        String name = "clare";
 
-        // Switch statement compares exact values
-        // Whereas if statements can be ranges
-        switch (name) {
-            case "Caleb":
-            case "John":
-                System.out.println("Welcome my man!");
-                break;
-            case "Clare":
-                System.out.println("Go away");
-                break;
-            default:
-                System.out.println("Try again later");
-                break;
-        }
+        boolean welcome = name.equals("clare") ? true : false;
+
+        System.out.println(welcome);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -53,6 +40,25 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        System.out.println("What's your name?");
+//        Scanner scanner = new Scanner(System.in);
+//        String name = scanner.nextLine();
+//
+//        // Switch statement compares exact values
+//        // Whereas if statements can be ranges
+//        switch (name) {
+//        case "Caleb":
+//        case "John":
+//        System.out.println("Welcome my man!");
+//                break;
+//                        case "Clare":
+//                        System.out.println("Go away");
+//                break;
+//        default:
+//        System.out.println("Try again later");
+//                break;
+//                        }
 
 //        System.out.println("How old are you?");
 //        Scanner scanner = new Scanner(System.in);
