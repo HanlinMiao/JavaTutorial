@@ -9,9 +9,11 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        String name = "clare";
 
-        boolean welcome = name.equals("clare") ? true : false;
+        String name = "CLare";
+        boolean welcome = false;
+
+        if (name.toLowerCase().equals("clare")) welcome = true;
 
         System.out.println(welcome);
     }
