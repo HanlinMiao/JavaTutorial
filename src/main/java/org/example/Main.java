@@ -9,24 +9,32 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        String password = "let me in";
-        System.out.println("Please enter your password: ");
-
+        System.out.println("How old are you?");
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        int age = Integer.parseInt(scanner.nextLine());
+        System.out.println("Cats or dogs?");
+        String animal = scanner.nextLine();
 
-        System.out.println(password.equals(input));
+        /* comparison operators
+         * == equality
+         * != inequality
+         * < less than
+         * > greater than
+         * <= less than or equal to
+         * >= greater than equal to
+         */
 
-        if (password.equals(input)) {
-            // code to execute if true
-            System.out.println("Your password is correct");
-        } else if ("don't stop believing".equals(input)) {
-            System.out.println("Your got the secret password");
-        } else {
-            // code to execute if false
-            System.out.println("Your password is incorrect. Please try again");
+        /* logical operators
+         * && and
+         * || or
+         * ! not
+         */
+
+        if (age > 12 && animal.equals("dogs")) { // comparison operator (similar to ==)
+            System.out.println("Welcome !");
+        } else if (animal.equals("cats")) {
+            System.out.println("Welcome cat lover");
         }
-        System.out.println("This is always going to run");
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -53,6 +61,25 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        String password = "let me in";
+//        System.out.println("Please enter your password: ");
+//
+//        Scanner scanner = new Scanner(System.in);
+//        String input = scanner.nextLine();
+//
+//        System.out.println(password.equals(input));
+//
+//        if (password.equals(input)) {
+//        // code to execute if true
+//        System.out.println("Your password is correct");
+//        } else if ("don't stop believing".equals(input)) {
+//        System.out.println("Your got the secret password");
+//        } else {
+//                // code to execute if false
+//                System.out.println("Your password is incorrect. Please try again");
+//        }
+//                System.out.println("This is always going to run");
 
 //        System.out.println(password == input);
 //
