@@ -9,16 +9,14 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        int x = 10;
-        int y = 20;
-        System.out.println(Integer.max(x, y));
-        System.out.println(Integer.compare(x, y));
-
-        String money = "300";
-        System.out.println(Integer.valueOf(money));
-        System.out.println(Integer.parseInt(money));
-        Integer a = Integer.valueOf(money);
-        int b = Integer.parseInt(money);
+        String x = "hello cats"; // Object (instance of a class)
+        System.out.println(x.charAt(0));
+        System.out.println(x + " and dogs");
+        x += " and puppies";
+        System.out.println(x);
+        String name = "Caleb";
+        System.out.printf("hello %s%n", name);
+        System.out.println(name.length());
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -46,6 +44,16 @@ public class Main {
 // operands - the thing(s) the operator works on
 
 
+//        int x = 10;
+//        int y = 20;
+//        System.out.println(Integer.max(x, y));
+//        System.out.println(Integer.compare(x, y));
+//
+//        String money = "300";
+//        System.out.println(Integer.valueOf(money));
+//        System.out.println(Integer.parseInt(money));
+//        Integer a = Integer.valueOf(money);
+//        int b = Integer.parseInt(money);
 //        double x = 5.0 / 2;
 //        int a = 5;
 //        double y = (double) a / 2;
