@@ -8,8 +8,11 @@ import java.util.Scanner;
 // i.e. methods, variables
 public class Main {
     // Class has methods with identifiers
-    public static void main(String[] args) {
-
+    public static void main(String[] args) { // method
+        User user = new User();
+        user.firstName = "Hanlin"; // Setting a property
+        user.lastName = "Miao";
+        System.out.println(user.getFullName());
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
