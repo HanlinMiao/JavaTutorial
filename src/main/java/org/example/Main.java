@@ -9,16 +9,7 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) {
-        String x = "yummmm...my oh my chicken pot pie";
-        int index = x.length() - 1;
-        System.out.println(x.charAt(index));
 
-        String fullAd = x + " Now with 20% more chicken";
-        System.out.println(fullAd);
-        System.out.println(fullAd.contains("chicken"));
-        System.out.println(fullAd.indexOf("my"));
-        System.out.println(fullAd.indexOf("my", fullAd.indexOf("my")+1));
-        System.out.println(fullAd.lastIndexOf("my"));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -46,6 +37,31 @@ public class Main {
 // operands - the thing(s) the operator works on
 
 
+//        String fullAd = "yummmm...my oh my chicken pot pie. Now with 20% more chicken\n";
+//        System.out.println(fullAd.toUpperCase());
+//        System.out.println(fullAd.toLowerCase());
+//        System.out.println(fullAd.strip());
+//        int beginIndex = 9;
+//        System.out.println(fullAd.stripLeading());
+//        System.out.println(fullAd.substring(9, 17)); // beginIndex is inclusive and the endIndex is exclusive
+//        System.out.println(fullAd.repeat(300));
+//        System.out.println(fullAd.equals("hello"));
+//
+//        String password = "let me in";
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Guess the password: ");
+//        String input = scanner.nextLine();
+//        System.out.println(input.equals(password));
+//        String x = "yummmm...my oh my chicken pot pie";
+//        int index = x.length() - 1;
+//        System.out.println(x.charAt(index));
+//
+//        String fullAd = x + " Now with 20% more chicken";
+//        System.out.println(fullAd);
+//        System.out.println(fullAd.contains("chicken"));
+//        System.out.println(fullAd.indexOf("my"));
+//        System.out.println(fullAd.indexOf("my", fullAd.indexOf("my")+1));
+//        System.out.println(fullAd.lastIndexOf("my"));
 //        String x = "hello cats"; // Object (instance of a class)
 //        System.out.println(x.charAt(0));
 //        System.out.println(x + " and dogs");
