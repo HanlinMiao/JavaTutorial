@@ -9,21 +9,12 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        // icu
-        // Initialization
-        // Comparison/Condition
-        // Update
-
-        String password = "let me in";
-        Scanner scanner = new Scanner(System.in);
-        String guess;
-        do {
-            System.out.println("Guess the password: ");
-            guess = scanner.nextLine();
-        } while (!guess.equals(password));
-
-        System.out.println("Congrats you are in.");
-        scanner.close(); // free the memory of the scanner
+        for (int i = 0; i < 11; i++) {
+            System.out.println(i);
+        }
+        for (int i = 9; i >= 0; i--) {
+            System.out.println(i);
+        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -50,6 +41,22 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        // icu
+//        // Initialization
+//        // Comparison/Condition
+//        // Update
+//
+//        String password = "let me in";
+//        Scanner scanner = new Scanner(System.in);
+//        String guess;
+//        do {
+//                System.out.println("Guess the password: ");
+//        guess = scanner.nextLine();
+//        } while (!guess.equals(password));
+//
+//        System.out.println("Congrats you are in.");
+//        scanner.close(); // free the memory of the scanner
 
 //        System.out.println("What's your name?");
 //        Scanner scanner = new Scanner(System.in);
