@@ -14,16 +14,13 @@ public class Main {
         // Comparison/Condition
         // Update
 
-        System.out.println("Guess the password: ");
         String password = "let me in";
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-
-        while(!input.equals(password)) {
-            // code
+        String guess;
+        do {
             System.out.println("Guess the password: ");
-            input = scanner.nextLine();
-        }
+            guess = scanner.nextLine();
+        } while (!guess.equals(password));
 
         System.out.println("Congrats you are in.");
         scanner.close(); // free the memory of the scanner
