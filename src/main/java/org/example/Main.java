@@ -9,31 +9,23 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        System.out.println("How old are you?");
+        System.out.println("What's your name?");
         Scanner scanner = new Scanner(System.in);
-        int age = Integer.parseInt(scanner.nextLine());
-        System.out.println("Cats or dogs?");
-        String animal = scanner.nextLine();
+        String name = scanner.nextLine();
 
-        /* comparison operators
-         * == equality
-         * != inequality
-         * < less than
-         * > greater than
-         * <= less than or equal to
-         * >= greater than equal to
-         */
-
-        /* logical operators
-         * && and
-         * || or
-         * ! not
-         */
-
-        if (age > 12 && animal.equals("dogs")) { // comparison operator (similar to ==)
-            System.out.println("Welcome !");
-        } else if (animal.equals("cats")) {
-            System.out.println("Welcome cat lover");
+        // Switch statement compares exact values
+        // Whereas if statements can be ranges
+        switch (name) {
+            case "Caleb":
+            case "John":
+                System.out.println("Welcome my man!");
+                break;
+            case "Clare":
+                System.out.println("Go away");
+                break;
+            default:
+                System.out.println("Try again later");
+                break;
         }
     }
 }
@@ -61,6 +53,33 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        System.out.println("How old are you?");
+//        Scanner scanner = new Scanner(System.in);
+//        int age = Integer.parseInt(scanner.nextLine());
+//        System.out.println("Cats or dogs?");
+//        String animal = scanner.nextLine();
+//
+//        /* comparison operators
+//         * == equality
+//         * != inequality
+//         * < less than
+//         * > greater than
+//         * <= less than or equal to
+//         * >= greater than equal to
+//         */
+//
+//        /* logical operators
+//         * && and
+//         * || or
+//         * ! not
+//         */
+//
+//        if (age > 12 && animal.equals("dogs")) { // comparison operator (similar to ==)
+//        System.out.println("Welcome !");
+//        } else if (animal.equals("cats")) {
+//        System.out.println("Welcome cat lover");
+//        }
 
 //        String password = "let me in";
 //        System.out.println("Please enter your password: ");
