@@ -10,24 +10,23 @@ public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
         String password = "let me in";
-
         System.out.println("Please enter your password: ");
+
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
+
         System.out.println(password.equals(input));
-        System.out.println(password == input);
 
-        // Primitives "==" this works
-        // Objects "==" this does not work; this is comparing the memory locations of the objects
-        // Values of the objects is a reference to the object
-
-        String a = "hi";
-        String b = "hi";
-        System.out.println(a == b); // true; string interning; "hi" value is interned, the same values are sharing the same memory location
-
-        int x = 10;
-        int y = 10;
-        System.out.println(x == y);
+        if (password.equals(input)) {
+            // code to execute if true
+            System.out.println("Your password is correct");
+        } else if ("don't stop believing".equals(input)) {
+            System.out.println("Your got the secret password");
+        } else {
+            // code to execute if false
+            System.out.println("Your password is incorrect. Please try again");
+        }
+        System.out.println("This is always going to run");
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
@@ -54,6 +53,20 @@ public class Main {
 // operators - work on operands to produce a value
 // operands - the thing(s) the operator works on
 
+
+//        System.out.println(password == input);
+//
+//        // Primitives "==" this works
+//        // Objects "==" this does not work; this is comparing the memory locations of the objects
+//        // Values of the objects is a reference to the object
+//
+//        String a = "hi";
+//        String b = "hi";
+//        System.out.println(a == b); // true; string interning; "hi" value is interned, the same values are sharing the same memory location
+//
+//        int x = 10;
+//        int y = 10;
+//        System.out.println(x == y);
 
 //        String fullAd = "yummmm...my oh my chicken pot pie. Now with 20% more chicken\n";
 //        System.out.println(fullAd.toUpperCase());
