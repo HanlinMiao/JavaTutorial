@@ -9,10 +9,25 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        User user = new User();
-        user.firstName = "Hanlin"; // Setting a property
-        user.lastName = "Miao";
-        System.out.println(user.getFullName());
+        String password = "let me in";
+
+        System.out.println("Please enter your password: ");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        System.out.println(password.equals(input));
+        System.out.println(password == input);
+
+        // Primitives "==" this works
+        // Objects "==" this does not work; this is comparing the memory locations of the objects
+        // Values of the objects is a reference to the object
+
+        String a = "hi";
+        String b = "hi";
+        System.out.println(a == b); // true; string interning; "hi" value is interned, the same values are sharing the same memory location
+
+        int x = 10;
+        int y = 10;
+        System.out.println(x == y);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
