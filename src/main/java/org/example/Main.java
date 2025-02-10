@@ -3,6 +3,7 @@ package org.example;
 import java.math.BigDecimal;
 import java.sql.SQLOutput;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 // everything is inside a class
@@ -11,10 +12,26 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades = {1, 2, 3, 72, 5, 98, 102, 6};
-        Arrays.sort(grades); // dual-pivot quick sort good for very large arrays n log(n)
-        Arrays.parallelSort(grades); // dual-pivot quick sort good for very large arrays
+        int[] grades1 = {1, 2, 3, 72, 5, 98, 102, 6};
+        int[] grades2 = {1, 2, 3, 72, 5, 98, 102, 6};
+
+        Arrays.fill(grades1, 100);
+        System.out.println(Arrays.toString(grades1));
+
+        if (grades1 == grades2) {
+            System.out.println("Grades are equal");
+        }
+        if (grades1.equals(grades2)) {
+            System.out.println("Grades are equal");
+        }
+        if (Arrays.equals(grades1, grades2)) { // deepEquals() compare nested arrays
+            System.out.println("Grades are equal");
+        }
+
+        String[] grades = new String[5];
+        Arrays.fill(grades, "A");
         System.out.println(Arrays.toString(grades));
+        List<String> testing = Arrays.asList(grades);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
