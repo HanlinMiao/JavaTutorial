@@ -9,12 +9,23 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        for (int i = 9; i >= 0; i--) {
-            for (int j = i; j >= 0; j--) {
+
+        int i = 9;
+        while(i>=0) {
+            int j = i;
+            while(j>=0) {
                 System.out.print(j + " ");
+                j --;
             }
+            i --;
             System.out.println();
         }
+//        for (int i = 9; i >= 0; i--) {
+//            for (int j = i; j >= 0; j--) {
+//                System.out.print(j + " ");
+//            }
+//            System.out.println();
+//        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
