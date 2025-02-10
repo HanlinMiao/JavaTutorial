@@ -10,18 +10,11 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        for (int i = 9; i >= 0; i--) {
-            if (i == 6) {
-                continue;
-            }
-            for (int j = i; j >= 0; j--) {
-                if (j == 5) {
-                    continue;
-                }
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
+        int[] grades = new int[10];
+        grades[0] = 10;
+        System.out.println(grades[0]);
+
+
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
