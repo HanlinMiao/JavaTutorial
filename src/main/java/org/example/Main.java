@@ -11,10 +11,16 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades = {9, 9, 7, 4, 3, 1, 4, 2, 5, 3};
-        int [][] nestedGrades = {{9, 9, 7, 4}, {3, 1, 4, 2, 5, 3}};
+        int[] grades = new int[10];
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number: ");
+        int number = scanner.nextInt();
+        for (int i = 0; i < 10; i++) {
+            grades[i] = number;
+        }
+
         System.out.println(Arrays.toString(grades));
-        System.out.println(Arrays.deepToString(nestedGrades));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
