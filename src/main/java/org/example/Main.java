@@ -12,26 +12,16 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades1 = {1, 2, 3, 72, 5, 98, 102, 6};
-        int[] grades2 = {1, 2, 3, 72, 5, 98, 102, 6};
+        int [][] grades = new int[5][5]; // row/col
 
-        Arrays.fill(grades1, 100);
-        System.out.println(Arrays.toString(grades1));
+        int [][] grades2 = {
+                {1, 5, 3},
+                {8, 4, 2},
+                {4, 6, 2},
+        };
+        // It does not have to be a square shaped array??
+        System.out.println(grades2[1][1]);
 
-        if (grades1 == grades2) {
-            System.out.println("Grades are equal");
-        }
-        if (grades1.equals(grades2)) {
-            System.out.println("Grades are equal");
-        }
-        if (Arrays.equals(grades1, grades2)) { // deepEquals() compare nested arrays
-            System.out.println("Grades are equal");
-        }
-
-        String[] grades = new String[5];
-        Arrays.fill(grades, "A");
-        System.out.println(Arrays.toString(grades));
-        List<String> testing = Arrays.asList(grades);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
