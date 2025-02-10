@@ -1,6 +1,7 @@
 package org.example;
 
 import java.math.BigDecimal;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 // everything is inside a class
@@ -9,23 +10,18 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-
-        int i = 9;
-        while(i>=0) {
-            int j = i;
-            while(j>=0) {
-                System.out.print(j + " ");
-                j --;
+        for (int i = 9; i >= 0; i--) {
+            if (i == 3) {
+                break;
             }
-            i --;
+            for (int j = i; j >= 0; j--) {
+                if (j == 6) {
+                    break;
+                }
+                System.out.print(j + " ");
+            }
             System.out.println();
         }
-//        for (int i = 9; i >= 0; i--) {
-//            for (int j = i; j >= 0; j--) {
-//                System.out.print(j + " ");
-//            }
-//            System.out.println();
-//        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
