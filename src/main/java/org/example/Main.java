@@ -9,11 +9,15 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        for (int i = 0; i < 11; i++) {
-            System.out.println(i);
-        }
+        boolean additionalLogging = false;
         for (int i = 9; i >= 0; i--) {
             System.out.println(i);
+            if (i == 5) {
+                if (additionalLogging) {
+                    System.out.println("Additional logging is enabled");
+                }
+                System.out.println("We found 5");
+            }
         }
     }
 }
