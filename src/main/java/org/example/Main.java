@@ -16,11 +16,20 @@ public class Main {
 
         int [][] grades2 = {
                 {1, 5, 3},
-                {8, 4, 2},
+                {8, 4, 2, 4, 3, 5, 3},
                 {4, 6, 2},
         };
         // It does not have to be a square shaped array??
         System.out.println(grades2[1][1]);
+        System.out.println(grades.length);
+        System.out.println(grades[0].length);
+
+        for (int row = 0; row < grades2.length; row++) {
+            for (int col = 0 ; col < grades2[row].length; col++) {
+                System.out.print(grades2[row][col] + " ");
+            }
+            System.out.println();
+        }
 
     }
 }
