@@ -11,14 +11,10 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades = {1, 2, 3, 72};
-
-        for (int i = 0; i < grades.length; i++) {
-            if (grades[i] == 72){
-                System.out.println("We found " + grades[i] + " at index " + i);
-            }
-
-        }
+        int[] grades = {1, 2, 3, 72, 5, 98, 102, 6};
+        Arrays.sort(grades); // dual-pivot quick sort good for very large arrays n log(n)
+        Arrays.parallelSort(grades); // dual-pivot quick sort good for very large arrays
+        System.out.println(Arrays.toString(grades));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
