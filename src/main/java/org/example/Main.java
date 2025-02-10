@@ -11,12 +11,12 @@ public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
         for (int i = 9; i >= 0; i--) {
-            if (i == 3) {
-                break;
+            if (i == 6) {
+                continue;
             }
             for (int j = i; j >= 0; j--) {
-                if (j == 6) {
-                    break;
+                if (j == 5) {
+                    continue;
                 }
                 System.out.print(j + " ");
             }
