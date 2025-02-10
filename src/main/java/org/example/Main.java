@@ -2,6 +2,7 @@ package org.example;
 
 import java.math.BigDecimal;
 import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.Scanner;
 
 // everything is inside a class
@@ -10,11 +11,10 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades = new int[10];
-        grades[0] = 10;
-        System.out.println(grades[0]);
-
-
+        int[] grades = {9, 9, 7, 4, 3, 1, 4, 2, 5, 3};
+        int [][] nestedGrades = {{9, 9, 7, 4}, {3, 1, 4, 2, 5, 3}};
+        System.out.println(Arrays.toString(grades));
+        System.out.println(Arrays.deepToString(nestedGrades));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
