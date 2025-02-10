@@ -11,16 +11,14 @@ import java.util.Scanner;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int[] grades = new int[10];
-        Scanner scanner = new Scanner(System.in);
+        int[] grades = {1, 2, 3, 72};
 
-        System.out.println("Enter a number: ");
-        int number = scanner.nextInt();
-        for (int i = 0; i < 10; i++) {
-            grades[i] = number;
+        for (int i = 0; i < grades.length; i++) {
+            if (grades[i] == 72){
+                System.out.println("We found " + grades[i] + " at index " + i);
+            }
+
         }
-
-        System.out.println(Arrays.toString(grades));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
