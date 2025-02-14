@@ -10,17 +10,10 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        List<Integer> grades = new ArrayList<>();
-        grades.add(5);
-        grades.add(10);
-        grades.add(1, 7);
-        System.out.println(grades.get(1));
-        System.out.println(grades.indexOf(7));
-        System.out.println(grades.indexOf(11));
-        System.out.println(grades.contains(7));
+        int [] gradesArray = {1, 4, 3, 3, 5};
+        List<Integer> grades = Arrays.asList(5, 3, 2, 6, 3);
+        System.out.println(grades);
 
-        grades.remove(1);
-        grades.clear();
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
