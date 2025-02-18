@@ -10,15 +10,12 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        List<Integer> allGrades = Arrays.asList(5, 3, 2, 6, 3);
-        Collections.sort(allGrades);
-        Collections.reverse(allGrades);
+        User user = new User();
+        user.firstName = "Jimmy";
+        user.lastName = "Unchained";
 
-        int[] grades = new int[allGrades.size()];
-        for (int i = 0; i < grades.length; i++) {
-            grades[i] = allGrades.get(i);
-        }
-        System.out.println(Arrays.toString(grades));
+        String message = user.output();
+        System.out.println(message);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
