@@ -10,9 +10,17 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        int [] gradesArray = {1, 4, 3, 3, 5};
         List<Integer> grades = Arrays.asList(5, 3, 2, 6, 3);
-        System.out.println(grades);
+
+//        for (int i = 0; i < grades.size(); i++) {
+//            grades.set(i, grades.get(i) * 2);
+//            System.out.println(grades.get(i));
+//        }
+
+        for (Integer grade : grades) {
+            System.out.println(grade);
+        }
+
 
     }
 }
