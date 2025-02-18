@@ -10,18 +10,18 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        List<Integer> grades = Arrays.asList(5, 3, 2, 6, 3);
+        List<List<Integer>> allGrades =  new ArrayList<>();
+        allGrades.add(Arrays.asList(5, 3, 2, 6, 3));
+        allGrades.add(Arrays.asList(4, 4, 10, 6, 8));
+        allGrades.add(Arrays.asList(56, 44, 2, 6, 3));
+        allGrades.add(Arrays.asList(5, 12, 45, 6, 3));
 
-//        for (int i = 0; i < grades.size(); i++) {
-//            grades.set(i, grades.get(i) * 2);
-//            System.out.println(grades.get(i));
-//        }
-
-        for (Integer grade : grades) {
-            System.out.println(grade);
+        for (List<Integer> grades : allGrades) {
+            for (Integer grade : grades) {
+                System.out.print(grade + " ");
+            }
+            System.out.println();
         }
-
-
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
