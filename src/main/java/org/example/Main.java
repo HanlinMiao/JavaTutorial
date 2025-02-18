@@ -11,8 +11,8 @@ public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
         User user = new User();
-        user.firstName = "Jimmy";
-        user.lastName = "Unchained";
+        user.setFirstName("Jimmy");
+        user.setLastName("Unchained");
 
         String message = user.output();
         System.out.println(message);

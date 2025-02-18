@@ -16,4 +16,7 @@ public class Notes {
     // It will only allow the user to access private attributes through methods
 
     // methods define some type of behaviors
+
+    // Encapsulation
+
 }
