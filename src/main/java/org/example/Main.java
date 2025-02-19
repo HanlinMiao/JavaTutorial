@@ -10,15 +10,19 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        User user = new User();
-        user.setFirstName("Jimmy");
-        user.setLastName("Unchained");
+        User me = new User();
+        me.setFirstName("Jimmy");
+        me.setLastName("Unchained");
 
-        String message = user.output();
-        System.out.println(message);
+        User you = new User();
+        you.setFirstName("Hanlin");
+        you.setLastName("Miao");
 
-        String fullName = user.getFullName();
-        System.out.println(fullName);
+        List<User> users = new ArrayList<>();
+        users.add(me);
+        users.add(you);
+
+        System.out.println(users.get(0).getFirstName());
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
