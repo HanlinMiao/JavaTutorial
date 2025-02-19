@@ -26,6 +26,7 @@ public class Main {
 //        }
 
         User.printUsers(users);
+        System.out.println(users.get(0).output(false));
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double

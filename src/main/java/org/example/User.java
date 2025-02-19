@@ -10,6 +10,14 @@ public class User {
         return "Hi my name is " + firstName + " " + lastName;
     }
 
+    public String output(boolean nice){
+        if (nice) {
+            return "You are now Nice " + getFullName();
+        } else {
+            return "You are a freak " + getFullName();
+        }
+    }
+
     public String getFullName() {
         return getFirstName() + " " + getLastName();
     }

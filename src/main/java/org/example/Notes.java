@@ -22,4 +22,9 @@ public class Notes {
     // Intro to static methods
     // The methods can be invoked from the class itself and you do not have to create instances of a class for it.
 
+    // Method overloading
+
+    // public void test(int x)
+    // public void test(String x)
+
 }
