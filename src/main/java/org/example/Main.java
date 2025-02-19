@@ -16,6 +16,9 @@ public class Main {
 
         String message = user.output();
         System.out.println(message);
+
+        String fullName = user.getFullName();
+        System.out.println(fullName);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
