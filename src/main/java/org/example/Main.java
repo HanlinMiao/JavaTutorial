@@ -21,13 +21,11 @@ public class Main {
             users.add(newUser);
         }
 
-        for (User user : users) {
-            User.printUser(user);
-        }
-    }
+//        for (User user : users) {
+//            User.printUser(user);
+//        }
 
-    public void printUser(User user) {
-        System.out.println(user.getFullName());
+        User.printUsers(users);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
