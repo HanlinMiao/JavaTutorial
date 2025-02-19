@@ -24,6 +24,14 @@ public class Main {
         for (User user : users) {
             System.out.println(user.getFullName());
         }
+
+        Main m = new Main();
+        m.printUser(users.getFirst());
+        m.printUser(users.getLast());
+    }
+
+    public void printUser(User user) {
+        System.out.println(user.getFullName());
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
