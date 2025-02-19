@@ -10,19 +10,20 @@ import java.util.*;
 public class Main {
     // Class has methods with identifiers
     public static void main(String[] args) { // method
-        User me = new User();
-        me.setFirstName("Jimmy");
-        me.setLastName("Unchained");
-
-        User you = new User();
-        you.setFirstName("Hanlin");
-        you.setLastName("Miao");
-
+        String[] firstNames = {"John", "Jane", "Bob", "Jamie"};
+        String[] lastNames = {"Doe", "Doe", "Dylan", "Lione"};
         List<User> users = new ArrayList<>();
-        users.add(me);
-        users.add(you);
 
-        System.out.println(users.get(0).getFirstName());
+        for (int i = 0; i < firstNames.length; i++) {
+            User newUser = new User();
+            newUser.setFirstName(firstNames[i]);
+            newUser.setLastName(lastNames[i]);
+            users.add(newUser);
+        }
+
+        for (User user : users) {
+            System.out.println(user.getFullName());
+        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
