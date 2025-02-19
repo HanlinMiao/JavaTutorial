@@ -23,7 +23,7 @@ public class User {
     }
 
     public String getFirstName() {
-        return firstName.toUpperCase();
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
@@ -31,7 +31,7 @@ public class User {
     }
 
     public String getLastName() {
-        return lastName.toUpperCase();
+        return lastName;
     }
 
     public void setLastName(String lastName) {
@@ -46,6 +46,19 @@ public class User {
         for (User user : users) {
             System.out.println(user.getFullName());
         }
+    }
+
+    public static int searchUser(List<User> users, String firstName, String lastName) {
+        return searchUser(users, firstName + " " + lastName);
+    }
+
+    public static int searchUser(List<User> users, String fullName) {
+        for(int i = 0; i < users.size(); i++) {
+            if(users.get(i).getFullName().equals(fullName))  {
+                return i;
+            }
+        }
+        return -1;
     }
 
 }
