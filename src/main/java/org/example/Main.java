@@ -22,12 +22,8 @@ public class Main {
         }
 
         for (User user : users) {
-            System.out.println(user.getFullName());
+            User.printUser(user);
         }
-
-        Main m = new Main();
-        m.printUser(users.getFirst());
-        m.printUser(users.getLast());
     }
 
     public void printUser(User user) {

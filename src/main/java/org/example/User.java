@@ -28,4 +28,8 @@ public class User {
         this.lastName = lastName;
     }
 
+    public static void printUser(User u) {
+        System.out.println(u.getFullName());
+    }
+
 }

@@ -19,4 +19,7 @@ public class Notes {
 
     // Encapsulation
 
+    // Intro to static methods
+    // The methods can be invoked from the class itself and you do not have to create instances of a class for it.
+
 }
