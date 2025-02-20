@@ -39,8 +39,8 @@ public class Main {
         System.out.println(found);
         Student student = new Student();
         student.major = "Computer Science";
-        System.out.println(student.major);
-
+        users.getFirst().sayHello();
+        student.sayHello();
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double

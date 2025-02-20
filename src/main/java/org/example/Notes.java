@@ -28,9 +28,21 @@ public class Notes {
     // public void test(String x)
 
     // Method overriding
-    // Replacing a method in a subclass
+    // Replacing a method in a subclass/derived class
 
     // Pass by value, pass by reference
     // Primitive object is passed by value
     // Custom object is passed by reference
+
+    // "Virtual" in Java
+    // You do not have to type virtual, it is implicit
+    // Most methods will be virtual by default
+    // static, private methods are not virtual
+
+    // Abstract makes the class `uninstantiable`.
+    // User newUser = new User() will throw an error.
+
+    // Abstract methods cannot have a method body
+    // Forces the subclass to implement the abstract method from the parent class.
+    // The type Student must implement the inherited abstract method User.sayHello()
 }
