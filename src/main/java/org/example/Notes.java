@@ -29,4 +29,8 @@ public class Notes {
 
     // Method overriding
     // Replacing a method in a subclass
+
+    // Pass by value, pass by reference
+    // Primitive object is passed by value
+    // Custom object is passed by reference
 }
