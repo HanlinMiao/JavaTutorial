@@ -28,7 +28,7 @@ public class Main {
         User.printUsers(users);
         System.out.println(User.searchUser(users, "Jane", "Doe"));
         System.out.println(users.getFirst());
-
+        System.out.println(users.getFirst().equals(users.getLast()));
 
     }
 }
