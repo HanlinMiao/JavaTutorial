@@ -49,6 +49,10 @@ public class User {
         }
     }
 
+    public static int searchUser(List<User> users, User user) {
+        return searchUser(users, user.getFullName());
+    }
+
     public static int searchUser(List<User> users, String firstName, String lastName) {
         return searchUser(users, firstName + " " + lastName);
     }

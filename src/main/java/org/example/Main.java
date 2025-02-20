@@ -30,6 +30,8 @@ public class Main {
         System.out.println(users.getFirst());
         System.out.println(users.getFirst().equals(users.getLast()));
 
+        System.out.println(User.searchUser(users, users.getLast()));
+
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
