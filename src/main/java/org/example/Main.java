@@ -29,8 +29,14 @@ public class Main {
         System.out.println(User.searchUser(users, "Jane", "Doe"));
         System.out.println(users.getFirst());
         System.out.println(users.getFirst().equals(users.getLast()));
-
         System.out.println(User.searchUser(users, users.getLast()));
+        User search = new User();
+        search.setFirstName("Jamie");
+        search.setLastName("Lione");
+        User found = User.findUser(users, search);
+        // found is the same object as the User in the list.
+        // passing by reference
+        System.out.println(found);
 
     }
 }

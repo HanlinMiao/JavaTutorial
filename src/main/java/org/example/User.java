@@ -66,6 +66,15 @@ public class User {
         return -1;
     }
 
+    public static User findUser(List<User> users, User user) {
+        for (User u : users){
+            if(u.equals(user))  {
+                return u;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return getFullName();
