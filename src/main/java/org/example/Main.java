@@ -37,6 +37,9 @@ public class Main {
         // found is the same object as the User in the list.
         // passing by reference
         System.out.println(found);
+        Student student = new Student();
+        student.major = "Computer Science";
+        System.out.println(student.major);
 
     }
 }

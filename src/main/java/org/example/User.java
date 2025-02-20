@@ -6,6 +6,7 @@ import java.util.Objects;
 public class User {
     private String firstName;
     private String lastName;
+    public boolean verified = false;
 
     public String output() {
         return "Hi my name is " + firstName + " " + lastName;
