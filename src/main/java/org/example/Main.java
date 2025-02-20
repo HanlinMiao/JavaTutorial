@@ -27,6 +27,9 @@ public class Main {
 
         User.printUsers(users);
         System.out.println(User.searchUser(users, "Jane", "Doe"));
+        System.out.println(users.getFirst());
+
+
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
