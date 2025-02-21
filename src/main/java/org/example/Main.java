@@ -41,6 +41,15 @@ public class Main {
         student.major = "Computer Science";
         users.getFirst().sayHello();
         student.sayHello();
+
+        Teacher teacher = new Teacher();
+        teacher.setFirstName("John");
+        teacher.setLastName("Marchese");
+        users.add(teacher);
+
+        for (User user : users) {
+            user.sayHello();
+        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double

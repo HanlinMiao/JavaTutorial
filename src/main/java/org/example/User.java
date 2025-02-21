@@ -3,12 +3,14 @@ package org.example;
 import java.util.List;
 import java.util.Objects;
 
-public abstract class User {
+public class User {
     private String firstName;
     private String lastName;
     public boolean verified = false;
 
-    public abstract void sayHello();
+    public void sayHello() {
+        System.out.println("Hello " + firstName + " " + lastName);
+    };
 
     public String output() {
         return "Hi my name is " + firstName + " " + lastName;

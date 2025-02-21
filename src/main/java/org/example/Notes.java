@@ -45,4 +45,9 @@ public class Notes {
     // Abstract methods cannot have a method body
     // Forces the subclass to implement the abstract method from the parent class.
     // The type Student must implement the inherited abstract method User.sayHello()
+
+    // Polymorphism
+    //      Person
+    // Student Teacher
+
 }
