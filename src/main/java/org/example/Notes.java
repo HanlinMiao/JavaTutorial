@@ -61,6 +61,9 @@ public class Notes {
     // class extends a class
     // class implements an interface
 
-    // final keyword
+    // final methods keyword
     // final basically means that the method cannot be overriden further down the inheritance hierarchy
+
+    // final class
+    // final means that the class cannot be extended further. No subclass can inherit this class.
 }
