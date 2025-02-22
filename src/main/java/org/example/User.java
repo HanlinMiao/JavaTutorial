@@ -8,6 +8,9 @@ public class User implements Talk {
     private String lastName;
     public boolean verified = false;
 
+    public enum status {active, inactive, probation};
+    public status status;
+
     public final void sayHello() {
         System.out.println("Hello User " + firstName + " " + lastName);
     }

@@ -56,6 +56,8 @@ public class Main {
         List<Talk> thingsThatTalk = new ArrayList<>();
         thingsThatTalk.add(student);
         System.out.println(thingsThatTalk);
+        student.status = student.status.active;
+        System.out.println(student.status);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
