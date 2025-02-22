@@ -58,6 +58,18 @@ public class Main {
         System.out.println(thingsThatTalk);
         student.status = student.status.active;
         System.out.println(student.status);
+
+        switch(student.status) {
+            case active:
+                System.out.println("Great!");
+                break;
+            case probation:
+                System.out.println("You are in probation!");
+                break;
+            case inactive:
+                System.out.println("You are currently not in probation!");
+                break;
+        }
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
