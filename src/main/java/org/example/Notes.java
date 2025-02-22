@@ -50,4 +50,17 @@ public class Notes {
     //      Person
     // Student Teacher
 
+    // Intro to constructors
+    // Just a method, something we invoke, and no return type
+    // we use the new keyword to invoke the constructor
+    // need to explicitly declare a default constructor and a custom constructor
+
+    // Interfaces
+    // Defines the behaviors that the class needs
+
+    // class extends a class
+    // class implements an interface
+
+    // final keyword
+    // final basically means that the method cannot be overriden further down the inheritance hierarchy
 }

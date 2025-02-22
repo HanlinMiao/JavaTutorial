@@ -3,14 +3,14 @@ package org.example;
 import java.util.List;
 import java.util.Objects;
 
-public class User {
+public class User implements Talk {
     private String firstName;
     private String lastName;
     public boolean verified = false;
 
-    public void sayHello() {
-        System.out.println("Hello " + firstName + " " + lastName);
-    };
+    public final void sayHello() {
+        System.out.println("Hello User " + firstName + " " + lastName);
+    }
 
     public String output() {
         return "Hi my name is " + firstName + " " + lastName;

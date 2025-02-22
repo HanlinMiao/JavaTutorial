@@ -37,10 +37,12 @@ public class Main {
         // found is the same object as the User in the list.
         // passing by reference
         System.out.println(found);
-        Student student = new Student();
+        Student student = new Student("Jimmy", "Unchained");
+        System.out.println(student.getFirstName());
+        System.out.println(student.getLastName());
         student.major = "Computer Science";
-        users.getFirst().sayHello();
         student.sayHello();
+        users.getFirst().sayHello();
 
         Teacher teacher = new Teacher();
         teacher.setFirstName("John");
@@ -50,6 +52,10 @@ public class Main {
         for (User user : users) {
             user.sayHello();
         }
+
+        List<Talk> thingsThatTalk = new ArrayList<>();
+        thingsThatTalk.add(student);
+        System.out.println(thingsThatTalk);
     }
 }
 // primitive types - boolean, byte, char, short, int, long, float, double
